@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05BEBC"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/x120"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/x68"
+                android:background="#05BEBC" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x86"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/build_invite_code_my_activity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/invite_old"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:text="生成邀请码"
+                android:textColor="#646d75" />
+
+            <TextView
+                android:id="@+id/build_zxing_code_my_activity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/erweicode_old"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="生成二维码"
+                android:textColor="#646d75" />
+        </LinearLayout>
+
+        <com.lefuyun.widget.CircleImageView
+            android:id="@+id/img_elder_current_activity"
+            android:layout_width="@dimen/x104"
+            android:layout_height="@dimen/x104"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_img"
+            lefu:civ_border_color="@color/white"
+            lefu:civ_border_width="@dimen/x3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_elder_current_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x20"
+            android:text="赖荣生"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/organization_elder_current_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x7"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="成都市第一社会福利院"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/age_elder_current_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x18"
+            android:background="@drawable/shape_main_color_big_circular"
+            android:paddingBottom="@dimen/x2"
+            android:paddingLeft="@dimen/x4"
+            android:paddingRight="@dimen/x4"
+            android:paddingTop="@dimen/x2"
+            android:text="年龄: 103岁"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/liner_healthstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/x10"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="健康状况"
+                    android:textColor="#696d6f"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.lefuyun.widget.ProperRatingBar
+                    android:id="@+id/ratingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x16"
+			        lefu:prb_defaultRating="0"
+			        lefu:prb_tickNormalDrawable="@drawable/ratingbar_normal"
+			        lefu:prb_tickSelectedDrawable="@drawable/ratingbar_select"
+			        lefu:prb_tickSpacing="0dp"
+			        lefu:prb_totalTicks="5"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_dailylife"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/x10"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="日常生活"
+                    android:textColor="#696d6f"
+                    android:textSize="@dimen/text_size_14" />
+                
+                <com.lefuyun.widget.ProperRatingBar
+                    android:id="@+id/ratingBar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x16"
+			        lefu:prb_defaultRating="0"
+			        lefu:prb_tickNormalDrawable="@drawable/ratingbar_normal"
+			        lefu:prb_tickSelectedDrawable="@drawable/ratingbar_select"
+			        lefu:prb_tickSpacing="0dp"
+			        lefu:prb_totalTicks="5"
+                     />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x40"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/liner_orgserve"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/x10"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="院方服务"
+                    android:textColor="#696d6f"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.lefuyun.widget.ProperRatingBar
+                    android:id="@+id/ratingBar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x16"
+			        lefu:prb_defaultRating="0"
+			        lefu:prb_tickNormalDrawable="@drawable/ratingbar_normal"
+			        lefu:prb_tickSelectedDrawable="@drawable/ratingbar_select"
+			        lefu:prb_tickSpacing="0dp"
+			        lefu:prb_totalTicks="5"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_mealstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/x10"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="饮食情况"
+                    android:textColor="#696d6f"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.lefuyun.widget.ProperRatingBar
+                    android:id="@+id/ratingBar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/x16"
+			        lefu:prb_defaultRating="0"
+			        lefu:prb_tickNormalDrawable="@drawable/ratingbar_normal"
+			        lefu:prb_tickSelectedDrawable="@drawable/ratingbar_select"
+			        lefu:prb_tickSpacing="0dp"
+			        lefu:prb_totalTicks="5"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_health_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x38"
+            android:layout_marginRight="@dimen/x38"
+            android:layout_marginTop="@dimen/x40"
+            android:background="@color/main_background"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/x8"
+            android:paddingTop="@dimen/x8"
+            android:text="综合健康状况"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+</LinearLayout>

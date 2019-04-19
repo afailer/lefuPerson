@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_gray_color_circular_stroke"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="@string/obtain_out_expect_out"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/start_time_obtain_detail_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x22"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_gray_color_circular_stroke"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="@string/obtain_out_expect_back"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/end_time_obtain_detail_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x22"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/container_real_start_time_obtain_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_gray_color_circular_stroke"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="@string/obtain_out_real_out"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/real_start_time_obtain_detail_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x22"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_real_end_time_obtain_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_gray_color_circular_stroke"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="@string/obtain_out_real_back"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/real_end_time_obtain_detail_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x22"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_gray_color_circular_stroke"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="请假事由"
+            android:textColor="#abafb4"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/reason_obtain_detail_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:layout_marginRight="@dimen/x22"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1"
+            android:textColor="#fe821f"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x49"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_main_color_circular"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x19"
+            android:text="接送家属"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+        
+        <TextView
+            android:id="@+id/name_obtain_detail_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x22"
+            android:text="请输入家属姓名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notes_obtain_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/shape_border_stroke"
+        android:gravity="center"
+        android:lines="7"
+        android:padding="@dimen/x3"
+        android:textColorHint="#ABAFB4"
+        android:textSize="@dimen/text_size_11"
+        android:textColor="#ABAFB4" />
+    
+    <Button 
+        android:id="@+id/close_obtain_detail_activity"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/x44"
+        android:layout_marginTop="@dimen/x22"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center"
+        android:background="@drawable/selector_button_radius_maincolor_gray"
+	    android:text="关闭"
+	    android:textColor="@color/selector_button_text_white_maincolor"
+	    android:textSize="@dimen/text_size_18"
+	    />
+
+</LinearLayout>

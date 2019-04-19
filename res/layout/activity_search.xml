@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.lefuyun.widget.ClearEditText
+        android:id="@+id/filter_edit_search_activity"
+        android:layout_margin="@dimen/x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_edit_normal"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_15" />
+    
+    <TextView
+        android:id="@+id/all_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="#336598"
+        android:layout_marginLeft="@dimen/x5"
+        android:paddingTop="@dimen/x10"
+        android:paddingBottom="@dimen/x10"
+        android:text="全部"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_search_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+        
+        <TextView
+            android:id="@+id/title_layout_no_match"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="right|top"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x5"
+            android:text="没有匹配的联系人"
+            android:textColor="#454545"
+            android:visibility="gone" />
+        
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="right|top"
+            android:background="#ff303030"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_layout_catalog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E0E0E0"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x5"
+                android:paddingTop="@dimen/x5"
+                android:textColor="#454545" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_search_activity"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_size_30"
+            android:visibility="invisible" />
+
+        <com.lefuyun.widget.SideBar
+            android:id="@+id/sidebar_search_activity"
+            android:layout_width="@dimen/x30"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+    </FrameLayout>
+
+</LinearLayout>

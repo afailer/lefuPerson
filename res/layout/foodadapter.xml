@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88333333"
+     >
+    <include layout="@layout/listview_new"/>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="280dp"
+	    android:background="@drawable/shape_foodpager_bottom"
+	    >
+	    <TextView 
+	        android:id="@+id/food_old_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/main_background"
+	        android:text="赖荣生"
+	        />
+	    <TextView 
+	        android:id="@+id/food_agency_loc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_small"
+	        android:textColor="@color/other_color"
+	        android:layout_centerInParent="true"
+	        android:layout_below="@id/food_old_name"
+	        android:layout_margin="20dp"
+	        android:text="成都市第一社会福利院"
+	        />
+	    <TextView 
+	        android:id="@+id/food_old_age"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:background="@drawable/shape_main_color_big_circular"
+	        android:layout_centerInParent="true"
+	        android:layout_below="@id/food_agency_loc"
+	        android:text="年龄：103"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

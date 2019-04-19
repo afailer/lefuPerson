@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#06bebd"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x136"
+        >
+        
+        <com.lefuyun.widget.CircleImageView
+            android:id="@+id/image_head_me_fragment"
+	        android:layout_width="@dimen/x50"
+		    android:layout_height="@dimen/x50"
+		    android:src="@drawable/default_img"
+		    android:layout_marginLeft="@dimen/x38"
+		    android:layout_marginBottom="@dimen/x19"
+		    android:layout_alignParentBottom="true"
+		    lefu:civ_border_width="@dimen/x2"
+   			lefu:civ_border_color="@color/white"
+	        />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:layout_toRightOf="@id/image_head_me_fragment"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x19"
+            android:layout_marginLeft="@dimen/x29"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            
+            <TextView 
+	            android:id="@+id/member_me_fragment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text=""
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/text_size_14"
+	            />
+            <TextView 
+	            android:id="@+id/num_binding_me_fragment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text=""
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/text_size_14"
+	            />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x19"
+            android:layout_marginRight="@dimen/x22"
+            android:background="#06bebd"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/quite_me_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:paddingTop="@dimen/x6"
+                android:paddingBottom="@dimen/x6"
+                android:text="退出"
+                android:textColor="@color/main_text"
+                android:background="@color/white"
+                android:textSize="@dimen/text_size_13"
+                />
+    	</LinearLayout>
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/content_me_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="@dimen/x34"
+        android:listSelector="@android:color/transparent" 
+        android:background="@color/white"
+        android:orientation="vertical"
+       />
+    
+</LinearLayout>

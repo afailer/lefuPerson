@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/code_concern_elder_activity_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入邀请码"
+        android:layout_marginTop="@dimen/x110"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginLeft="@dimen/x14"
+        android:inputType="number"
+        android:singleLine="true"
+        android:minHeight="@dimen/x120"
+        android:gravity="center"
+        android:background="@drawable/shape_gray_color_circular"
+        android:textColorHint="#CED9DF"
+        android:textSize="@dimen/text_size_36"
+        android:textColor="@color/main_text"
+        />
+
+    <TextView
+        android:id="@+id/btn_concern_elder_activity_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginTop="@dimen/x66"
+        android:background="@drawable/selector_button_radius_maincolor_gray"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/x9"
+        android:paddingTop="@dimen/x9"
+        android:text="添加关注"
+        android:textColor="@color/selector_button_text_white_maincolor"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

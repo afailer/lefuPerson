@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- 常用颜色值 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="gray_new">#EFF4F8</color>
+    <color name="text_gray">#ced9df</color>
+    <color name="bg_gray">#F7F7F7</color>
+    <color name="text_color">#333333</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="click_gray">#C8C7CC</color>
+    <color name="main_gray">#979797</color>
+    <color name="translucent">#30000000</color>
+    <color name="item_listview">#EBEBEB</color>
+     <color name="holo_blue">#FF33E5B5</color>
+    <color name="window_background">#EEEEEE</color>
+    <color name="main_background">#06BEBD</color>
+    <color name="main_text">#06BEBD</color>
+    <color name="color1">#49C0FB</color>
+    <color name="color2">#8DC81B</color>
+    <color name="color3">#61D2FE</color>
+    <color name="color4">#5BDB99</color>
+    <color name="color5">#F55C46</color>
+     <color name="color6">#F3C61C</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#B0000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+     <color name="color_bule">#2F9BFF</color>
+    <color name="color_bule2">#40B3F0</color>
+    <color name="color_bule3">#99ddff</color>
+    <color name="transparent">#00000000</color>
+    <!-- 时间选择器使用 -->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+        <color name="txtgray">#9FAFB6</color>
+    <color name="rating_bar_normal">#CED9DF</color>
+    <color name="rating_bar_select">#B8E240</color>
+    <color name="title_color">#292E39</color>
+    <color name="content_color">#808690</color>
+    <color name="other_color">#9DA1A7</color>
+</resources>

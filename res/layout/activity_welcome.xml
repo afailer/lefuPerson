@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/vertical_pager_welcome_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    
+    <com.lefuyun.widget.circleindicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x16"
+        android:id="@+id/indicator"
+        lefu:ci_background="#ced9df"
+        lefu:ci_selected_background="@color/main_background"
+        lefu:ci_mode="outside"
+        lefu:ci_gravity="center"
+        lefu:ci_radius="@dimen/x5"
+        lefu:ci_margin="@dimen/x5"
+        />
+    
+    <TextView 
+        android:id="@+id/btn_welcome_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:background="@drawable/shape_main_color_big_circular"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x56"
+        android:paddingLeft="@dimen/x16"
+        android:paddingRight="@dimen/x16"
+        android:paddingTop="@dimen/x8"
+        android:paddingBottom="@dimen/x8"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        />
+
+</RelativeLayout>

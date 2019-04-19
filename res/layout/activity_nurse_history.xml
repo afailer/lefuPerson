@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/care_history" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/graywhite"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/chose_nurse_type_click"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x44"
+        android:background="@color/window_background" >
+
+        <TextView
+            android:id="@+id/chose_nurse_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/x4"
+            android:drawableRight="@drawable/switch_btn"
+            android:text="全部"
+            android:textColor="#C7C7CD"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.lefuyun.widget.RefreshLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/new_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </com.lefuyun.widget.RefreshLayout>
+
+        <include layout="@layout/nodata_layout" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+</LinearLayout>

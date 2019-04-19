@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/white_share_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/main_background" >
+
+        <TextView
+            android:id="@+id/share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="日常护理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/nurse_pic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawableLeft="@drawable/arrow_left_white"
+            android:drawablePadding="@dimen/x8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x15"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+
+        <ImageView
+            android:id="@+id/share_nurse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:contentDescription="@string/normal_picture_string"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:src="@drawable/share_white" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/nurse_dialog_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            >
+	 <android.support.v4.view.ViewPager
+           android:id="@+id/weekrecipe_pager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+        <ImageView
+                android:id="@+id/nurse_pager_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/normal_picture_string"
+                android:src="@drawable/praise_gray" />
+            <com.lefuyun.widget.PeriscopeLayout
+                android:id="@+id/tv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_above="@id/nurse_pager_zan"
+                android:visibility="gone" />
+        </RelativeLayout>
+</LinearLayout>

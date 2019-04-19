@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <com.lefuyun.widget.CircleImageView
+        android:id="@+id/img_elder_obtain_out_activity"
+        android:layout_width="@dimen/x104"
+	    android:layout_height="@dimen/x104"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="@dimen/x35"
+	    android:src="@drawable/default_img"
+	    lefu:civ_border_width="@dimen/x2"
+    	lefu:civ_border_color="@color/white"
+        />
+    
+    <TextView 
+        android:id="@+id/name_elder_obtain_out_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赖荣生"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginTop="@dimen/x28"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/main_text"
+        />
+    <TextView 
+        android:id="@+id/organization_elder_obtain_out_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成都市第一社会福利院"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginTop="@dimen/x7"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#abafb4"
+        />
+    <TextView 
+        android:id="@+id/age_elder_obtain_out_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄: 103岁"
+        android:textSize="@dimen/text_size_12"
+        android:background="@drawable/shape_main_color_big_circular"
+        android:paddingLeft="@dimen/x4"
+        android:paddingRight="@dimen/x4"
+        android:paddingTop="@dimen/x2"
+        android:paddingBottom="@dimen/x2"
+        android:layout_marginTop="@dimen/x18"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x120"
+        android:orientation="horizontal"
+        >
+        
+        <RelativeLayout 
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            >
+            <ImageView 
+                android:id="@+id/permission_elder_obtain_out_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/obtain_blue"
+                android:contentDescription="@string/normal_picture_string"
+                />
+            
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="请假"
+		        android:textSize="@dimen/text_size_14"
+		        android:gravity="center_horizontal"
+		        android:textColor="@color/white"
+		        />
+            
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            >
+            <ImageView 
+                android:id="@+id/history_elder_obtain_out_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/obtain_green"
+                android:contentDescription="@string/normal_picture_string"
+                />
+            
+            <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="查询"
+		        android:textSize="@dimen/text_size_14"
+		        android:gravity="center_horizontal"
+		        android:textColor="@color/white"
+		        />
+            
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

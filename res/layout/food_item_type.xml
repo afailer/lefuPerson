@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    >
+<TextView 
+    android:id="@+id/text_food_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:textColor="@color/white"
+    android:background="@drawable/shape_color1_color_big_circular"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:layout_margin="5dp"
+    android:layout_marginLeft="15dp"
+    android:textSize="@dimen/text_size_small"
+    >
+    
+
+</TextView>
+</RelativeLayout>

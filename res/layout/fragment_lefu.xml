@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <!-- 界面共分为三个主模块 -->
+    
+    <!-- 最上面的模块 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x48"
+        >
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/app_name"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/text_size_17"
+	        />
+        
+        <ImageView 
+            android:id="@+id/login_lefu_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:clickable="true"
+            android:contentDescription="@string/normal_picture_string"
+            android:src="@drawable/user"
+            />
+        <ImageView 
+            android:id="@+id/add_elder_lefu_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:clickable="true"
+            android:contentDescription="@string/normal_picture_string"
+            android:src="@drawable/add_old_man"
+            />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

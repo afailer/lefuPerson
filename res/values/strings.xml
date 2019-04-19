@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐福健康</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_tab_name_lefu">乐福</string>
+    <string name="main_tab_name_explore">发现</string>
+    <string name="main_tab_name_news">新闻中心</string>
+    <string name="main_tab_name_my">我的</string>
+    <string name="normal_string">乐福</string>
+    <string name="normal_picture_string">乐福应用图片</string>
+    <string name="loading">加载中…</string>
+    <string name="scan_top_text">将二维码对准扫描区内, 即可自动扫描</string>
+    <string name="scan_bottom_text">生成老人二维码</string>
+    <string name="title_activity_important_notice">ImportantNoticeActivity</string>
+    <string name="important_refresh">数据更新</string>
+    <string name="title_activity_health_chart">HealthChartActivity</string>
+    <string name="title_activity_important_detail_notice">ImportantDetailNoticeActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_org_exercise">OrgExerciseActivity</string>
+    <string name="title_activity_everyday_feeling">EverydayFeelingActivity</string>
+    <string name="title_activity_nurse_care">NurseCareActivity</string>
+    <string name="title_activity_week_food">WeekFoodActivity</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="nurse_care_title">您的家人刚刚接受了护理服务,项目：</string>
+    <!-- ratingbar -->
+    <string name="prb_default_symbolic_string">☆</string>
+
+    <!-- 时间选择器使用 -->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="title_activity_org">OrgActivity</string>
+    <string name="title_activity_org_active_detail">OrgActiveDetailActivity</string>
+    <string name="title_activity_nurse_all_photo">NurseAllPhotoActivity</string>
+    <string name="title_activity_nurse_pic_detail">NursePicDetailActivity</string>
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
+    <string name="title_activity_nurse_history">NurseHistoryActivity</string>
+    <!-- 外出请假的五个状态 -->
+    <string-array name="obtain_out_state">
+        <item>审核中</item>
+        <item>驳回</item>
+        <item>审核通过</item>
+        <item>离院</item>
+        <item>完成</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <string name="obtain_out_expect_out">预计离院时间</string>
+    <string name="obtain_out_expect_back">预计返回时间</string>
+    <string name="obtain_out_real_out">实际离院时间</string>
+    <string name="obtain_out_real_back">实际返回时间</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="down_state">正在下载：%s</string>
+    <string name="title_activity_h5_detail">H5DetailActivity</string>
+    <string name="title_activity_daily_history">DailyHistoryActivity</string>
+    <string name="title_activity_important_h5">ImportantH5Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_month_food">MonthFoodActivity</string>
+    <string name="json_config">{\"approvalStatus\":1,\"bloodPressure\":{\"accur\":0,\"color\":[{\"fontColor\":\"#FF343F\",\"high\":59.99,\"low\":0,\"showLevel\":1},{\"fontColor\":\"#03CF97\",\"high\":90,\"low\":60,\"showLevel\":0},{\"fontColor\":\"#03CF97\",\"high\":140,\"low\":90.01,\"showLevel\":0},{\"fontColor\":\"#FF343F\",\"high\":300,\"low\":140.01,\"showLevel\":1}],\"confirmMax\":180,\"confirmMin\":60,\"diff\":10,\"inputMax\":300,\"inputMin\":0,\"line\":[{\"color\":\"#FF343F\",\"value\":0},{\"color\":\"#03CF97\",\"value\":60},{\"color\":\"#03CF97\",\"value\":90},{\"color\":\"#03CF97\",\"value\":140},{\"color\":\"#FF343F\",\"value\":300}],\"yMax\":300,\"yMin\":0},\"bloodSugar\":{\"accur\":1,\"color\":[{\"fontColor\":\"#FF343F\",\"high\":3.89,\"low\":0},{\"fontColor\":\"#03CF97\",\"high\":7.1,\"low\":3.9},{\"fontColor\":\"#FFA600\",\"high\":10,\"low\":7.11},{\"fontColor\":\"#FF343F\",\"high\":25,\"low\":10.01}],\"confirmMax\":10,\"confirmMin\":3.9,\"inputMax\":25,\"inputMin\":0,\"line\":[{\"color\":\"#FF343F\",\"value\":0},{\"color\":\"#03CF97\",\"value\":3.9},{\"color\":\"#03CF97\",\"value\":7.1},{\"color\":\"#FFA600\",\"value\":10},{\"color\":\"#FF343F\",\"value\":25}],\"yMax\":25,\"yMin\":0},\"breathing\":{\"accur\":0,\"color\":[{\"fontColor\":\"#FFA600\",\"high\":15.99,\"low\":10},{\"fontColor\":\"#03CF97\",\"high\":20,\"low\":16},{\"fontColor\":\"#FFA600\",\"high\":30,\"low\":20.01}],\"confirmMax\":20,\"confirmMin\":16,\"inputMax\":30,\"inputMin\":10,\"line\":[{\"color\":\"#FFA600\",\"value\":10},{\"color\":\"#03CF97\",\"value\":16},{\"color\":\"#03CF97\",\"value\":20},{\"color\":\"#FFA600\",\"value\":30}],\"yMax\":30,\"yMin\":10},\"dailyNursing\":[],\"defecation\":{\"accur\":0,\"color\":[{\"fontColor\":\"#FFA600\",\"high\":0.01,\"low\":0},{\"fontColor\":\"#03CF97\",\"high\":5,\"low\":0.02},{\"fontColor\":\"#FFA600\",\"high\":10,\"low\":5.01}],\"confirmMax\":5,\"confirmMin\":-0.01,\"inputMax\":10,\"inputMin\":0,\"line\":[{\"color\":\"#03CF97\",\"value\":0},{\"color\":\"#03CF97\",\"value\":5},{\"color\":\"#FFA600\",\"value\":10}],\"yMax\":10,\"yMin\":0},\"pulse\":{\"accur\":0,\"color\":[{\"fontColor\":\"#FF343F\",\"high\":59.99,\"low\":40},{\"fontColor\":\"#03CF97\",\"high\":100,\"low\":60},{\"fontColor\":\"#FFA600\",\"high\":180,\"low\":100.01},{\"fontColor\":\"#FF343F\",\"high\":220,\"low\":180.01}],\"confirmMax\":100,\"confirmMin\":60,\"inputMax\":220,\"inputMin\":40,\"line\":[{\"color\":\"#FF343F\",\"value\":40},{\"color\":\"#03CF97\",\"value\":60},{\"color\":\"#03CF97\",\"value\":100},{\"color\":\"#FFA600\",\"value\":180},{\"color\":\"#FF343F\",\"value\":220}],\"yMax\":220,\"yMin\":40},\"signsData\":[],\"temperature\":{\"accur\":1,\"color\":[{\"fontColor\":\"#FF343F\",\"high\":35,\"low\":0},{\"fontColor\":\"#FFA600\",\"high\":35.99,\"low\":35.01},{\"fontColor\":\"#03CF97\",\"high\":37.5,\"low\":36},{\"fontColor\":\"#FFA600\",\"high\":39,\"low\":37.51},{\"fontColor\":\"#FF343F\",\"high\":42,\"low\":39.01}],\"confirmMax\":40,\"confirmMin\":36,\"inputMax\":42,\"inputMin\":35,\"line\":[{\"color\":\"#FF343F\",\"value\":0},{\"color\":\"#FFA600\",\"value\":35},{\"color\":\"#03CF97\",\"value\":36},{\"color\":\"#03CF97\",\"value\":37.5},{\"color\":\"#FFA600\",\"value\":39},{\"color\":\"#FF343F\",\"value\":42}],\"yMax\":42,\"yMin\":35}}</string>
+    <string name="jpush_beta_key">047e63c93c8d6dc9be7a0261</string>
+    <string name="jpush_online_key">1f3d5885ac23263057a0c1df</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="contact_us">请留下您的宝贵意见,将有助于我们更好地为您和您的家人提供服务</string>
+    <string name="title_activity_video">VideoActivity</string>
+
+</resources>

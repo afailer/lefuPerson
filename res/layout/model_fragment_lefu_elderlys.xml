@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_lefu_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- 右上角部分 -->
+
+    <TextView
+        android:id="@+id/date_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x15"
+        android:text="2016年12月21号"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/week_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/date_lefu_fragment"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x4"
+        android:text="星期一"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+    
+    <TextView
+        android:id="@+id/proposal_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/week_lefu_fragment"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x4"
+        android:drawableLeft="@drawable/proposal"
+        android:drawablePadding="@dimen/x2"
+        android:text="建议簿"
+        android:textColor="#99000000"
+        android:textSize="@dimen/text_size_14" />
+
+    <!-- 右下角部分 -->
+
+    <TextView
+        android:id="@+id/before_login_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/x4"
+        android:text="最近登录: 2天前"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/share_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/before_login_lefu_fragment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x15"
+        android:drawableLeft="@drawable/share"
+        android:drawablePadding="@dimen/x3"
+        android:text="分享"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_14" />
+
+    <!-- 左下角部分 -->
+
+    <TextView
+        android:id="@+id/organization_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x4"
+        android:text="成都市第一社会福利院"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/old_man_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/organization_lefu_fragment"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x15"
+        android:text="老人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_24" />
+
+    <!-- 左上角部分 -->
+    
+    <ImageView 
+        android:id="@+id/img_air_temperature_lefu_fragment"
+        android:layout_width="@dimen/x35"
+        android:layout_height="@dimen/x35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pic_air_temperature"
+        android:layout_marginLeft="@dimen/x15"
+        android:contentDescription="@string/normal_picture_string"
+        />
+
+    <TextView
+        android:id="@+id/air_temperature_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x6"
+        android:layout_toRightOf="@id/img_air_temperature_lefu_fragment"
+        android:text="7℃"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_26" />
+    
+    <TextView
+        android:id="@+id/city_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/air_temperature_lefu_fragment"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x8"
+        android:layout_marginTop="@dimen/x4"
+        android:text="成都市"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/air_state_lefu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/city_lefu_fragment"
+        android:layout_below="@id/air_temperature_lefu_fragment"
+        android:layout_marginTop="@dimen/x4"
+        android:text="今日雾霾"
+        android:textColor="#AEB2B6"
+        android:textSize="@dimen/text_size_12" />
+
+    <!-- 左右切换按钮 -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x13"
+        android:clickable="true"
+        android:contentDescription="@string/normal_picture_string"
+        android:src="@drawable/arrow_right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:clickable="true"
+        android:contentDescription="@string/normal_picture_string"
+        android:src="@drawable/arrow_left" />
+
+</RelativeLayout>

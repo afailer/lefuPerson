@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x26"
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_marginLeft="@dimen/x34"
+        android:layout_marginRight="@dimen/x34"
+        android:paddingTop="@dimen/x14"
+        android:paddingBottom="@dimen/x14"
+        android:gravity="center_horizontal"
+        android:background="#f7f7f8"
+        android:text="请选择需要取消关注的人"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="#696d6f"
+        />
+    
+    <GridView 
+        android:id="@+id/gv_concern_elder_cancel_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:descendantFocusability="blocksDescendants"
+        ></GridView>
+    
+    <TextView 
+        android:id="@+id/select_elder_cancel_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x16"
+        android:drawableLeft="@drawable/accept_tick_no"
+        android:drawablePadding="@dimen/x4"
+        android:text="全选"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="#adadad"
+        />
+    
+    <TextView 
+        android:id="@+id/btn_elder_cancel_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x26"
+        android:background="@drawable/selector_button_radius_maincolor_gray"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x60"
+        android:paddingTop="@dimen/x8"
+        android:paddingBottom="@dimen/x8"
+        android:layout_marginBottom="@dimen/x57"
+        android:text="确定"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/selector_button_text_white_maincolor"
+        />
+
+</LinearLayout>

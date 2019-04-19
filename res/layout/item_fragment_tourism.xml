@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_item_tourism_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_item_listview"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        >
+        <ImageView 
+	        android:id="@+id/img_item_tourism_fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/default_img"
+	        android:contentDescription="@string/normal_picture_string"
+	        android:scaleType="centerCrop"
+	        />
+        <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/translucent"
+	        android:contentDescription="@string/normal_picture_string"
+	        android:scaleType="fitXY"
+	        />
+        
+        <TextView
+            android:id="@+id/name_img_item_tourism_fragment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/x6"
+	        android:layout_marginRight="@dimen/x6"
+	        android:layout_centerInParent="true"
+	        android:layout_centerHorizontal="true"
+	        android:singleLine="true"
+	        android:text="成都醉美桃花节半月游"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_16" />
+        
+        <TextView
+            android:id="@+id/data_img_item_tourism_fragment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/x6"
+	        android:layout_below="@id/name_img_item_tourism_fragment"
+	        android:layout_centerHorizontal="true"
+	        android:text="2016年4月"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_14" />
+        
+        <TextView
+            android:id="@+id/org_img_item_tourism_fragment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/x40"
+	        android:layout_below="@id/data_img_item_tourism_fragment"
+	        android:layout_centerHorizontal="true"
+	        android:text="成都市三乐养老中心"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_14" />
+        
+        <ImageView 
+            android:id="@+id/state_img_item_tourism_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tourism_over"
+            android:contentDescription="@string/normal_picture_string"
+            android:layout_above="@id/name_img_item_tourism_fragment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_marginBottom="@dimen/x4"
+            />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        
+        <TextView
+            android:id="@+id/price_item_tourism_fragment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/x12"
+	        android:text="475元/人起"
+	        android:textColor="#FEBB65"
+	        android:textSize="@dimen/text_size_14" />
+        
+        <TextView
+            android:id="@+id/state_item_tourism_fragment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/x12"
+	        android:paddingLeft="@dimen/x8"
+	        android:paddingRight="@dimen/x8"
+	        android:paddingTop="@dimen/x1"
+	        android:paddingBottom="@dimen/x1"
+	        android:background="#D5D7D9"
+	        android:text="已结束"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_14" />
+        
+    </RelativeLayout>
+</LinearLayout>

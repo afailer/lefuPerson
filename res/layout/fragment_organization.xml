@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sort_organization_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x44"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/sort_organization_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/x4"
+            android:drawableRight="@drawable/switch_btn"
+            android:text="排序"
+            android:textColor="#c7c7cd"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <com.lefuyun.widget.RefreshLayout
+        android:id="@+id/container_organization_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_organization_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </com.lefuyun.widget.RefreshLayout>
+
+</LinearLayout>

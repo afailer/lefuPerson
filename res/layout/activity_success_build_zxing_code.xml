@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x46"
+        android:drawablePadding="@dimen/x26"
+        android:drawableBottom="@drawable/success_tick"
+        android:text="已生成二维码"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/main_text"
+        />
+    
+    <ImageView 
+        android:id="@+id/img_success_build_zxing_code_activity"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x55"
+        android:src="@drawable/default_img"
+        android:contentDescription="@string/normal_picture_string"
+        />
+    
+    <TextView
+        android:id="@+id/share_success_build_zxing_code_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginTop="@dimen/x74"
+        android:background="@drawable/selector_button_radius_maincolor_gray"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/x9"
+        android:paddingTop="@dimen/x9"
+        android:text="分享二维码"
+        android:textColor="@color/selector_button_text_white_maincolor"
+        android:textSize="@dimen/text_size_18" />
+    
+</LinearLayout>

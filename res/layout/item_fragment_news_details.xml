@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_news_details_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x200"
+    android:background="@drawable/selector_item_listview"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title_item_news_details_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:lines="1"
+        android:text="国家统计局补贴养老政策"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:id="@+id/img_item_news_details_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:contentDescription="@string/normal_picture_string"
+        android:src="@drawable/default_img"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/type_item_news_details_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:paddingLeft="@dimen/x3"
+            android:paddingRight="@dimen/x3"
+            android:text="养老"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+        <TextView
+            android:id="@+id/date_item_news_details_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/type_item_news_details_fragment"
+            android:text="March 2015"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_14" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x12"
+            android:src="@drawable/apostrophe"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

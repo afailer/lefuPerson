@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/white"
+     >
+    
+    <TextView 
+        android:id="@+id/title_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17"
+        />
+    
+    <TextView 
+        android:id="@+id/back_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/x15"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="@dimen/x8"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="返回"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="#abafb4"
+        android:visibility="gone"
+        />
+    
+    <ImageView 
+        android:id="@+id/image_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/normal_picture_string"
+        android:src="@drawable/arrow_left"
+        android:clickable="true"
+        android:visibility="gone"
+        />
+    <TextView 
+        android:id="@+id/text_right_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/main_text"
+        />
+    
+    <View 
+        android:id="@+id/line_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/graywhite"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

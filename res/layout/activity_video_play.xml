@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+     >
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+	<!-- <LinearLayout 
+	    android:id="@+id/text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    >
+	    <TextView 
+	        android:id="@+id/video_play"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="播放"
+	        android:layout_weight="1"
+	        android:background="#333333"
+	        android:textColor="@color/white"
+	        />
+	    <TextView 
+	        android:id="@+id/video_stop"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="停止"
+	        android:layout_weight="1"
+	        android:background="#333333"
+	        android:textColor="@color/white"
+	        />
+	</LinearLayout> -->
+</RelativeLayout>

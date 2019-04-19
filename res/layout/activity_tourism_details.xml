@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+	<com.lefuyun.widget.MyScrollView
+	    android:id="@+id/sv_tourism_details_activity"
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+    	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+		        android:layout_height="@dimen/x272"
+	            >
+	            <android.support.v4.view.ViewPager
+		            android:id="@+id/vp_tourism_details_activity"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" />
+	            <com.lefuyun.widget.circleindicator.CircleIndicator
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/x40"
+			        android:layout_alignParentBottom="true"
+			        android:layout_marginBottom="@dimen/x2"
+			        android:id="@+id/indicator"
+			        lefu:ci_background="#ced9df"
+			        lefu:ci_selected_background="@color/main_background"
+			        lefu:ci_mode="outside"
+			        lefu:ci_gravity="center"
+			        lefu:ci_radius="@dimen/x5"
+			        lefu:ci_margin="@dimen/x5"
+			        />
+	        </RelativeLayout>
+	        
+	        <WebView
+	            android:id="@+id/web_tourism_details_activity"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1" />
+	        
+    	</LinearLayout>
+	</com.lefuyun.widget.MyScrollView>
+	
+	<RelativeLayout 
+	    android:id="@+id/item_action_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/transparent"
+	     >
+	    
+	    <View 
+	        android:id="@+id/backgroud_action_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/title_bar_height"
+	        android:background="@color/white"
+	        android:visibility="invisible"
+	        />
+	    
+	    <RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/title_bar_height"
+		    android:background="@color/transparent"
+		     >
+		    
+		    <ImageView 
+		        android:id="@+id/back_action_bar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="@dimen/x15"
+		        android:paddingRight="@dimen/x15"
+		        android:contentDescription="@string/normal_picture_string"
+		        android:gravity="center_vertical"
+		        android:src="@drawable/back_round_main_color"
+		        />
+		    
+		    <ImageView 
+		        android:id="@+id/share_action_bar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="@dimen/x15"
+		        android:paddingRight="@dimen/x15"
+		        android:layout_alignParentRight="true"
+		        android:contentDescription="@string/normal_picture_string"
+		        android:src="@drawable/share_round_main_color"
+		        />
+		    </RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="#F8F8F8"
+	     >
+	    <TextView 
+	        android:id="@+id/signup_online_tourism_details_activity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/selector_button_maincolor_gray"
+	        android:paddingTop="@dimen/x12"
+	        android:paddingBottom="@dimen/x12"
+	        android:paddingLeft="@dimen/x20"
+	        android:paddingRight="@dimen/x20"
+	        android:layout_alignParentRight="true"
+	        android:text="线上报名"
+	        android:textColor="@color/selector_button_text_white_maincolor"
+	        />
+	    <TextView 
+	        android:id="@+id/signup_onphone_tourism_details_activity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/selector_button_orange_gray"
+	        android:paddingTop="@dimen/x12"
+	        android:paddingBottom="@dimen/x12"
+	        android:paddingLeft="@dimen/x20"
+	        android:paddingRight="@dimen/x20"
+	        android:layout_toLeftOf="@id/signup_online_tourism_details_activity"
+	        android:text="电话报名"
+	        android:textColor="@color/selector_button_text_white_orange"
+	        />
+	    
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/content_proposal_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:hint=""
+        android:gravity="top"
+        android:padding="@dimen/x6"
+        android:background="@drawable/shape_white_color_circular"
+        android:textColor="#666666"
+        />
+    
+    <TextView
+        android:id="@+id/confirm_proposal_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x14"
+        android:layout_marginTop="@dimen/x53"
+        android:layout_marginBottom="@dimen/x53"
+        android:background="@drawable/selector_button_radius_maincolor_gray"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/x9"
+        android:paddingTop="@dimen/x9"
+        android:text="提交"
+        android:textColor="@color/selector_button_text_white_maincolor"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

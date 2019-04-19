@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/visitor_switch_activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x86"
+        android:layout_gravity="center_horizontal"
+        android:text="乐福健康"
+        android:textSize="@dimen/text_size_48"
+        android:textColor="@color/main_text"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="l   e   f   u            h   e   a   l   t   h"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="#D4D4D4"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x229"
+        android:text="随便看看"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="#CED9DF"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/right_login_switch_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x8"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="马上登录"
+	        android:background="@drawable/shape_main_color_big_circular"
+	        android:layout_marginTop="@dimen/x36"
+	        android:paddingLeft="@dimen/x16"
+	        android:paddingRight="@dimen/x16"
+	        android:paddingTop="@dimen/x8"
+	        android:paddingBottom="@dimen/x8"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_size_18"
+	        />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x57"
+        android:text="乐为慈善心  福到受益人"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/main_text"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x5"
+        android:text="Copyright © 2015 LeFu technology."
+        android:textSize="@dimen/text_size_12"
+        android:textColor="#C4C4C4"
+        />
+
+</LinearLayout>

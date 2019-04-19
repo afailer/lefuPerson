@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.lefuyun.widget.MyScrollView
+        android:id="@+id/nurse_h5_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/top_detail_pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x272" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/nurse_detail_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.lefuyun.widget.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/x2"
+                    lefu:ci_background="#ced9df"
+                    lefu:ci_gravity="center"
+                    lefu:ci_margin="@dimen/x5"
+                    lefu:ci_mode="outside"
+                    lefu:ci_radius="@dimen/x5"
+                    lefu:ci_selected_background="@color/main_background" />
+                <com.lefuyun.widget.PeriscopeLayout
+	                android:id="@+id/tv_one"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mid_detail_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_detail_pager"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/zan_h5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/zan_small"
+                        android:drawablePadding="15dp"
+                        android:text="赞"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@color/text_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/share_h5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/share_small"
+                        android:drawablePadding="15dp"
+                        android:text="分享"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <View 
+			    android:id="@+id/line_detail_pager"
+			    android:layout_width="match_parent"
+			    android:layout_height="1px"
+			    android:layout_below="@id/mid_detail_pager"
+			    android:background="@color/text_gray"
+			    />
+
+            <WebView
+                android:id="@+id/nurse_detail_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/line_detail_pager"
+                android:background="#33ff0000" />
+        </RelativeLayout>
+    </com.lefuyun.widget.MyScrollView>
+
+    <RelativeLayout
+        android:id="@+id/item_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" >
+
+        <View
+            android:id="@+id/backgroud_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="@color/white"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="@color/transparent" >
+
+            <ImageView 
+		        android:id="@+id/back_action_bar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="@dimen/x15"
+		        android:paddingRight="@dimen/x15"
+		        android:contentDescription="@string/normal_picture_string"
+		        android:gravity="center_vertical"
+		        android:src="@drawable/back_round_main_color"
+		        />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

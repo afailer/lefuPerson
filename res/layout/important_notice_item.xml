@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:layout_marginLeft="@dimen/item_margin"
+    android:layout_marginRight="@dimen/item_margin"
+     >
+    <ImageView 
+        android:id="@+id/important_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        />
+    <TextView 
+        android:id="@+id/important_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/important_pic"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_marginLeft="@dimen/text_margin_right"
+        android:layout_marginRight="@dimen/text_margin_right"
+        />
+    <TextView 
+        android:id="@+id/important_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/important_pic"
+        android:layout_below="@id/important_title"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:layout_marginLeft="@dimen/text_margin_right"
+        android:layout_marginRight="@dimen/text_margin_right"
+        android:maxLines="2"
+        />
+
+</RelativeLayout>

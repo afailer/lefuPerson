@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x21"
+        >
+        <com.lefuyun.widget.CircleImageView
+	        android:id="@+id/img_item_concern_elder"
+	        android:layout_width="@dimen/x69"
+		    android:layout_height="@dimen/x69"
+		    android:clickable="false"
+	    	android:focusable="false"
+		    android:layout_centerHorizontal="true"
+		    android:src="@drawable/default_img"
+		    lefu:civ_border_width="@dimen/x2"
+	    	lefu:civ_border_color="@color/white"
+	        />
+        <com.lefuyun.widget.CircleImageView
+	        android:id="@+id/background_item_concern_elder"
+	        android:layout_width="@dimen/x69"
+		    android:layout_height="@dimen/x69"
+		    android:clickable="false"
+	    	android:focusable="false"
+		    android:layout_centerHorizontal="true"
+		    android:src="@drawable/translucent"
+		    lefu:civ_border_width="@dimen/x2"
+	    	lefu:civ_border_color="@color/white"
+	        />
+        <TextView 
+            android:id="@+id/note_item_concern_elder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="审核中"
+            android:textColor="@color/main_text"
+            />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/name_item_concern_elder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x24"
+        android:text="卢新书"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/black"
+        />
+    <TextView 
+        android:id="@+id/age_item_concern_elder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x6"
+        android:text="男  73岁"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="#abafb4"
+        />
+    
+</LinearLayout>

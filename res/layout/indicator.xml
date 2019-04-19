@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    >
+    <com.lefuyun.widget.circleindicator.CircleIndicator
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/x20"
+			        android:layout_alignParentBottom="true"
+			        android:id="@+id/indicator"
+			        lefu:ci_background="#ced9df"
+			        lefu:ci_selected_background="@color/main_background"
+			        lefu:ci_mode="outside"
+			        lefu:ci_gravity="center"
+			        lefu:ci_radius="@dimen/x5"
+			        lefu:ci_margin="@dimen/x5"
+			        />
+
+</RelativeLayout>

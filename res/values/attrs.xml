@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <!-- 边界宽 -->
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- 圆心填充颜色 -->
+        <attr name="civ_fill_color" format="color" />
+        <!-- 是否显示小标记院 -->
+        <attr name="civ_display_Sign" format="boolean" />
+        <!-- 标记圆的默认颜色 -->
+        <attr name="civ_display_Sign_default" format="color" />
+        <!-- 标记圆的选中颜色 -->
+        <attr name="civ_display_Sign_select" format="color" />
+        <!-- 标记圆的边界宽 -->
+        <attr name="civ_display_Sign_border_width" format="dimension" />
+        <!-- 标记圆的边界颜色 -->
+        <attr name="civ_display_Sign_border_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="ToggleButton">
+    	<attr name="borderWidth" format="dimension" />
+    	<attr name="offBorderColor" format="reference|color" />
+    	<attr name="offColor" format="reference|color" />
+    	<attr name="onColor" format="reference|color" />
+    	<attr name="spotColor" format="reference|color" />
+    	<attr name="animate" format="reference|boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="slidingBlock" format="reference|color"/>
+        <attr name="allowWidthFull" format="boolean"/>
+        <attr name="disableViewPager" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleIndicator">
+        <!-- 小圆圈半径, 默认值是10 -->
+        <attr name="ci_radius" format="dimension"/>
+        <!-- 元之间的边距,默认值是40 -->
+        <attr name="ci_margin" format="dimension"/>
+        <!-- 小圆的背景颜色,默认是BLUE -->
+        <attr name="ci_background" format="color|integer"/>
+        <!-- 被选中小圆的颜色,默认是RED -->
+        <attr name="ci_selected_background" format="color|integer"/>
+        <!-- 当前控件的在水平位置上的位置,默认是居中显示 -->
+        <attr name="ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <!-- 小圆滑动的方式,默认是solo方式 -->
+        <attr name="ci_mode">
+            <!-- 从内部向下一个目标滑动 -->
+            <enum name="inside" value="0"/>
+            <!-- 从外部部向下一个目标滑动 -->
+            <enum name="outside" value="1"/>
+            <!-- 直接向下一个目标移动,没有移动的过程 -->
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleIndicators">
+        <attr name="cis_width" format="dimension"/>
+        <attr name="cis_height" format="dimension"/>
+        <attr name="cis_margin" format="dimension"/>
+        <attr name="cis_radius" format="dimension"></attr>
+        <attr name="cis_animator" format="reference"/>
+        <attr name="cis_animator_reverse" format="reference"/>
+        <attr name="cis_drawable" format="reference"/>
+        <attr name="cis_drawable_unselected" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColorOut" format="color"/>
+        <attr name="textColorCenter" format="color"/>
+        <attr name="dividerColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ProperRatingBar" >
+        <!-- 显示星星的总个数. 默认是5个 -->
+        <attr name="prb_totalTicks" format="integer" />
+        <!-- 默认选择的星星,默认的是5个 -->
+        <attr name="prb_defaultRating" format="integer" />
+        <!-- 如果是true的话,通过点击控件也会是星星被选择, 默认的是false -->
+        <attr name="prb_clickable" format="boolean" />
+        <!-- 默认显示的小图标. 默认的是'☆' -->
+        <attr name="prb_symbolicTick" format="string" />
+        <!-- 图标文本默认的字体大小. 默认的是'15sp' -->
+        <attr name="android:textSize" />
+        <!-- 图标文字的风格. 可能的选项: 'bold', 'italic', 'normal'. 默认的是 'normal'. -->
+        <attr name="android:textStyle" />
+        <!-- 没有被选中时候的颜色. 默认的是 '#FF000000' (black). -->
+        <attr name="prb_symbolicTickNormalColor" format="reference|color" />
+        <!-- 被选中时的颜色. 默认的是'#FF888888' (gray). -->
+        <attr name="prb_symbolicTickSelectedColor" format="reference|color" />
+        <!-- Drawable作为图标的资源,没有被选中的情况. 没有默认的值. -->
+        <attr name="prb_tickNormalDrawable" format="reference" />
+        <!-- Drawable作为图标的资源,被选中的情况. 没有默认的值. -->
+        <attr name="prb_tickSelectedDrawable" format="reference" />
+        <!-- Margin值对于drawables. 仅仅是在使用Drawable的情况下使用. 默认的是 '1dp' (gray). -->
+        <attr name="prb_tickSpacing" format="dimension" />
+    </declare-styleable>
+    <item name="prb_child_tag_id" type="id" />
+    
+</resources>

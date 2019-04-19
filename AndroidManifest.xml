@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lefuyun"
+    android:versionCode="2"
+    android:versionName="2.12" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    <!-- Required -->
+    <permission
+        android:name="com.lefuyun.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络通信 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取MAC地址 -->
+    <!-- 可选的权限： -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Required -->
+    <uses-permission android:name="com.lefuyun.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.lefuyun.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/lefuyun"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zo15fRMuufUExkgtP7tzNHVmWGDZsjSi" />
+        <activity
+            android:name="com.lefuyun.AppStart"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ConcernElderlyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.UserProtocolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ObtainOutAddActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.HealthConditionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ProposalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ConcernElderlyInviteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ConcernElderlyDirectlyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ConcernElderlySuccessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.zxing.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.MyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SuccessBuildInviteCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SuccessBuildZxingCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.WelcomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SwitchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ImportantNoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.HealthChartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ImportantUnreceivedListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.HistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.LoginSMSActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.CurrentElderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ConcernElderlyCancelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ObtainOutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ObtainOutHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NewsDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ResetPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.webview.LefuInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ObtainOutDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ExploreDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ReserveOrganization"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SearchSecondaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ContactUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.lefuyun.service.DownloadService" >
+        </service>
+        <service android:name="com.lefuyun.service.AudioService" >
+        </service>
+
+        <activity
+            android:name="com.lefuyun.ui.OrgExerciseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.OrgDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NurseCareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.WeekFoodActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.EditPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.OrgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.OrgActiveDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NurseAllPhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NursePicDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.PhotoViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NurseHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ImportantHistoryNoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.VideoPlayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NurseH5DetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.DailyHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.HealthConditionIndexActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SignDataRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.Jpush.ShowDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <receiver
+            android:name="com.lefuyun.healthcondition.TimeBroadCastReciver"
+            android:screenOrientation="portrait" >
+        </receiver>
+
+        <activity
+            android:name="com.lefuyun.ui.ExpectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SwitchElderlyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ImportantNotifyForNotifyListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.NurseH5DetailForNoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 哈哈 -->
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.lefuyun" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.lefuyun" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lefuyun" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.lefuyun.Jpush.JpushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.lefuyun" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="@string/jpush_online_key" />
+
+        <activity
+            android:name="com.lefuyun.ImportantH5Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.MonthFoodActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+		<service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <activity
+            android:name="com.lefuyun.ui.TourismDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.AroundCitiesActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.CurrentCitiesMapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.ReserveTourism"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.SatnavActivity"
+            android:screenOrientation="portrait">
+        </activity>
+		<activity
+            android:name="com.lefuyun.ui.AudioActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lefuyun.ui.VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+	</application>
+
+</manifest>

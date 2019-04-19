@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/health_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/chart_day"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="@dimen/circle_radius"
+                android:layout_height="@dimen/circle_radius"
+                android:layout_centerInParent="true"
+                android:background="@drawable/oval"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_week"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="@dimen/circle_radius"
+                android:layout_height="@dimen/circle_radius"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="周"
+                android:textColor="@color/txtgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_month"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="@dimen/circle_radius"
+                android:layout_height="@dimen/circle_radius"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="@color/txtgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_year"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="@dimen/circle_radius"
+                android:layout_height="@dimen/circle_radius"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="@color/txtgray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rela_left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pre" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_time_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/txtgray" />
+
+        <RelativeLayout
+            android:id="@+id/rela_right"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_signdataname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/text_size_14" >
+    </TextView>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/BodyDataChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="3" />
+
+    <TextView
+        android:id="@+id/tv_alldata"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="查看所有数据"
+        android:textColor="@color/txtgray"
+        android:textSize="@dimen/text_size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
